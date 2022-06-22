@@ -1,7 +1,6 @@
 const pageContent = document.querySelector('#content')
 
 const createHeader = () => {
-
     // Creates the header element
     const header = document.createElement('header');
     header.classList.add('header');
@@ -46,6 +45,7 @@ const createFooter = () => {
     // Creates the footer element
     const footer = document.createElement('footer');
     footer.classList.add('footer');
+    
     // Creates the footer paragraph element
     const footerPara = document.createElement('p');
     footerPara.classList.add('footer-para');
