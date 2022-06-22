@@ -1,1 +1,1 @@
-console.log("Hello World");
+(()=>{"use strict";const e=document.querySelector("#content");(()=>{const t=document.createElement("header");t.classList.add("header");const a=document.createElement("h1");a.classList.add("header-title"),a.innerText="Restaurant Page",t.append(a);const n=document.createElement("nav");n.classList.add("header-nav");const d=document.createElement("ul");d.classList.add("header-nav-list"),n.append(d),t.append(n),e.append(t)})()})();
