@@ -1,7 +1,6 @@
-import { createFooter, createHeader, createMain } from './modules/page-load.js';
-import { createTitle } from './modules/home.js';
+import { createPageLayout } from './modules/page-load.js';
+import { createHome } from './modules/home.js';
 
-createHeader();
-createMain();
-createFooter();
-createTitle();
+createPageLayout();
+
+createHome();
