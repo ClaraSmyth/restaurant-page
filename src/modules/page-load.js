@@ -14,7 +14,7 @@ const createHeader = () => {
     // Creates the h1 element
     const title = document.createElement('h1');
     title.classList.add('header-title');
-    title.innerText = 'Restaurant Page';
+    title.innerText = 'Clara\'s Donuts';
 
     // Creates the nav element
     const nav = document.createElement('nav');
