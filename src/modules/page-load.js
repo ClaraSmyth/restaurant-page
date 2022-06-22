@@ -17,7 +17,7 @@ const createHeader = () => {
 
     //Creates the ul element within nav
     const navList = document.createElement('ul');
-    navList.classList.add('header-nav-list');
+    navList.classList.add('nav-list');
 
     //Creates the li elements within the ul
     const home = createListItem('Home');
@@ -36,10 +36,16 @@ const createHeader = () => {
 }
 
 const createListItem = (name) => {
-    //Creates the ul list item
+    // Creates the ul list item
     const navListItem = document.createElement('li');
-    navListItem.classList.add('header-nav-list-item');
-    navListItem.innerText = name;
+    navListItem.classList.add('nav-list-item');
+    // Creates the link
+    const navListItemLink = document.createElement('a');
+    navListItemLink.classList.add('nav-list-link');
+    navListItemLink.setAttribute('href', '#');
+    navListItemLink.innerText = name;
+    // Adds the link to the li
+    navListItem.append(navListItemLink);
     return navListItem;
 }
 
