@@ -1,3 +1,4 @@
-import { createHeader } from "./modules/page-load.js";
+import { createFooter, createHeader } from "./modules/page-load.js";
 
 createHeader()
+createFooter()

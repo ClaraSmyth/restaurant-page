@@ -40,13 +40,38 @@ const createListItem = (name) => {
     const navListItem = document.createElement('li');
     navListItem.classList.add('nav-list-item');
     // Creates the link
-    const navListItemLink = document.createElement('a');
-    navListItemLink.classList.add('nav-list-link');
-    navListItemLink.setAttribute('href', '#');
-    navListItemLink.innerText = name;
+    const navListItemLink = createLink(name, 'nav-list-link', '#')
     // Adds the link to the li
     navListItem.append(navListItemLink);
     return navListItem;
 }
 
-export { createHeader };
+const createLink = (linkText, className, hrefValue) => {
+    const link = document.createElement('a');
+    link.classList.add(className);
+    link.setAttribute('href', hrefValue);
+    link.innerText = linkText;
+    return link;
+}
+
+const createFooter = () => {
+    // Creates the footer element
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
+    // Creates the footer paragraph element
+    const footerPara = document.createElement('p');
+    footerPara.classList.add('footer-para');
+
+    //Creates the footer link elements
+    const footerLinkOne = createLink('Clara', 'footer-link', '#');
+    const footerLinkTwo = createLink('TheOdinProject', 'footer-link', '#');
+
+    // Adds the links to the paragraph text
+    footerPara.append('Created by ', footerLinkOne, ' for ', footerLinkTwo)
+    // Adds the paragraph to the footer
+    footer.append(footerPara);
+    // Adds the footer to the page
+    pageContent.append(footer);
+}
+
+export { createHeader, createFooter };
