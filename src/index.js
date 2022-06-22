@@ -1,4 +1,5 @@
-import { createFooter, createHeader } from "./modules/page-load.js";
+import { createFooter, createHeader, createMain } from "./modules/page-load.js";
 
-createHeader()
-createFooter()
+createHeader();
+createMain();
+createFooter();

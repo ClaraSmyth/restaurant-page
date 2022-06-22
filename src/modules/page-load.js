@@ -35,23 +35,11 @@ const createHeader = () => {
     pageContent.append(header);
 }
 
-const createListItem = (name) => {
-    // Creates the ul list item
-    const navListItem = document.createElement('li');
-    navListItem.classList.add('nav-list-item');
-    // Creates the link
-    const navListItemLink = createLink(name, 'nav-list-link', '#')
-    // Adds the link to the li
-    navListItem.append(navListItemLink);
-    return navListItem;
-}
+const createMain = () => {
+    const main = document.createElement('main');
+    main.classList.add('main');
 
-const createLink = (linkText, className, hrefValue) => {
-    const link = document.createElement('a');
-    link.classList.add(className);
-    link.setAttribute('href', hrefValue);
-    link.innerText = linkText;
-    return link;
+    pageContent.append(main);
 }
 
 const createFooter = () => {
@@ -74,4 +62,23 @@ const createFooter = () => {
     pageContent.append(footer);
 }
 
-export { createHeader, createFooter };
+const createListItem = (name) => {
+    // Creates the ul list item
+    const navListItem = document.createElement('li');
+    navListItem.classList.add('nav-list-item');
+    // Creates the link
+    const navListItemLink = createLink(name, 'nav-list-link', '#')
+    // Adds the link to the li
+    navListItem.append(navListItemLink);
+    return navListItem;
+}
+
+const createLink = (linkText, className, hrefValue) => {
+    const link = document.createElement('a');
+    link.classList.add(className);
+    link.setAttribute('href', hrefValue);
+    link.innerText = linkText;
+    return link;
+}
+
+export { createHeader, createMain, createFooter };
