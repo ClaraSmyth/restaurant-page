@@ -1,11 +1,5 @@
 const pageContent = document.querySelector('#content')
 
-const createPageLayout = () => {
-    createHeader();
-    createMain();
-    createFooter();
-}
-
 const createHeader = () => {
     // Creates the header element
     const header = document.createElement('header');
@@ -85,6 +79,12 @@ const createLink = (linkText, className, hrefValue) => {
     link.setAttribute('href', hrefValue);
     link.innerText = linkText;
     return link;
+}
+
+const createPageLayout = () => {
+    createHeader();
+    createMain();
+    createFooter();
 }
 
 export { createPageLayout };
