@@ -64,6 +64,7 @@ const createInput = (name, type) => {
     input.setAttribute('type', type);
     input.setAttribute('id', `${name}-label`);
     input.setAttribute('name', `${name}-label`);
+    input.setAttribute('required', 'true');
     return input
 }
 
