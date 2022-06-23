@@ -6,4 +6,5 @@ import { createContact } from './modules/contact.js';
 createPageLayout();
 
 // createHome();
-createContact();
+// createContact();
+createMenu();
