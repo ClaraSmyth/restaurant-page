@@ -43,11 +43,26 @@ const createImg = (imgPath) => {
     return img;
 }
 
+const menuItems = [
+    ['Classic Ring', 'A classic ring donut with glaze or sugar on top', '$2', 'https://placehold.co/400'],
+    ['Classic Filled', 'A classic filled donut with powdered sugar on top and a jam or custard filling', '$2', 'https://placehold.co/400'],
+    ['Test', 'This is a test', '$2', 'https://placehold.co/400'],
+    ['Test', 'This is a test', '$2', 'https://placehold.co/400'],
+    ['Test', 'This is a test', '$2', 'https://placehold.co/400'],
+    ['Test', 'This is a test', '$2', 'https://placehold.co/400'],
+];
+
 const createMenu = () => {
     const main = document.querySelector('.main');
     const title = createTitle();
-    const itemOne = createItem('Test', 'This is a test', '$2', 'https://placehold.co/400');
-    main.append(title, itemOne);
-}
+    main.append(title);
+    
+    const createMenuItems = (() => {
+        menuItems.forEach((item) => {
+            const thisItem = createItem(item[0], item[1], item[2], item[3]);
+            main.append(thisItem);
+        });
+    })();
+};
 
-export { createMenu, items }
+export { createMenu }
