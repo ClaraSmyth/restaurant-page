@@ -44,12 +44,12 @@ const createImg = (imgPath) => {
 }
 
 const menuItems = [
-    ['Classic Ring', 'A classic ring donut with glaze or sugar on top', '$2', 'https://placehold.co/400'],
-    ['Classic Filled', 'A classic filled donut with powdered sugar on top and a jam or custard filling', '$2', 'https://placehold.co/400'],
-    ['Test', 'This is a test', '$2', 'https://placehold.co/400'],
-    ['Test', 'This is a test', '$2', 'https://placehold.co/400'],
-    ['Test', 'This is a test', '$2', 'https://placehold.co/400'],
-    ['Test', 'This is a test', '$2', 'https://placehold.co/400'],
+    ['Classic Ring', 'A classic ring donut with glaze or sugar on top', '$2', './assets/classic-ring.jpg'],
+    ['Classic Filled', 'A classic filled donut with powdered sugar on top and a jam or custard filling', '$2', './assets/classic-filled.jpg'],
+    ['Chocolate Ring', 'A ring donut dipped in chocolate with your choice of topping', '$2.50', './assets/choc-ring.jpg'],
+    ['Chocolate Filled', 'A filled donut dipped in chocolate with your choice of topping and filling', '$2.50', './assets/choc-filled.jpg'],
+    ['Colourful Ring', 'A ring donut dipped in a variety of icing colours and your choice of topping', '$2.50', './assets/icing-ring.jpg'],
+    ['Colourful Filled', 'A filled donut dipped in a variety of icing colours and your choice of topping and filling', '$2.50', './assets/icing-filled.jpg'],
 ];
 
 const createMenu = () => {
