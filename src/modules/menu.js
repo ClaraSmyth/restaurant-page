@@ -56,6 +56,7 @@ const menuItems = [
 
 const createMenu = () => {
     const main = document.querySelector('.main');
+    main.textContent = '';
     const title = createTitle();
     main.append(title);
     // Loops through the array and appends each item to the page

@@ -15,6 +15,7 @@ const createImg = () => {
 
 const createHome = () => {
     const main = document.querySelector('.main');
+    main.textContent = '';
     const title = createTitle();
     const img = createImg();
     main.append(title, img);

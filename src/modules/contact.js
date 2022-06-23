@@ -121,6 +121,7 @@ const createInput = (name, type) => {
 
 const createContact = () => {
     const main = document.querySelector('.main');
+    main.textContent = '';
     const title = createTitle();
     const details = createDetails();
     const open = createOpenHours();
