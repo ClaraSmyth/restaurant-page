@@ -58,13 +58,11 @@ const createMenu = () => {
     const main = document.querySelector('.main');
     const title = createTitle();
     main.append(title);
-    
-    const createMenuItems = (() => {
-        menuItems.forEach((item) => {
-            const thisItem = createItem(item[0], item[1], item[2], item[3]);
-            main.append(thisItem);
-        });
-    })();
+    // Loops through the array and appends each item to the page
+    menuItems.forEach((item) => {
+        const thisItem = createItem(item[0], item[1], item[2], item[3]);
+        main.append(thisItem);
+    });
 };
 
 export { createMenu }
