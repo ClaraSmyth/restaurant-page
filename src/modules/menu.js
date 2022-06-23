@@ -44,12 +44,14 @@ const createImg = (imgPath) => {
 }
 
 const menuItems = [
-    ['Classic Ring', 'A classic ring donut with glaze or sugar on top', '$2', './assets/classic-ring.jpg'],
-    ['Classic Filled', 'A classic filled donut with powdered sugar on top and a jam or custard filling', '$2', './assets/classic-filled.jpg'],
-    ['Chocolate Ring', 'A ring donut dipped in chocolate with your choice of topping', '$2.50', './assets/choc-ring.jpg'],
-    ['Chocolate Filled', 'A filled donut dipped in chocolate with your choice of topping and filling', '$2.50', './assets/choc-filled.jpg'],
-    ['Colourful Ring', 'A ring donut dipped in a variety of icing colours and your choice of topping', '$2.50', './assets/icing-ring.jpg'],
-    ['Colourful Filled', 'A filled donut dipped in a variety of icing colours and your choice of topping and filling', '$2.50', './assets/icing-filled.jpg'],
+    ['Box of 6', 'Your choice of any 6 donuts!', '£10', './assets/box-6.jpg'],
+    ['Box of 12', 'Your choice of any 12 donuts!', '£15', './assets/box-12.jpg'],
+    ['Classic Ring', 'A classic ring donut with glaze or sugar on top', '£2', './assets/classic-ring.jpg'],
+    ['Classic Filled', 'A classic filled donut with powdered sugar on top and a jam or custard filling', '£2', './assets/classic-filled.jpg'],
+    ['Chocolate Ring', 'A ring donut dipped in chocolate with your choice of topping', '£2.50', './assets/choc-ring.jpg'],
+    ['Chocolate Filled', 'A filled donut dipped in chocolate with your choice of topping and filling', '£2.50', './assets/choc-filled.jpg'],
+    ['Colourful Ring', 'A ring donut dipped in a variety of icing colours and your choice of topping', '£2.50', './assets/icing-ring.jpg'],
+    ['Colourful Filled', 'A filled donut dipped in a variety of icing colours and your choice of topping and filling', '£2.50', './assets/icing-filled.jpg'],
 ];
 
 const createMenu = () => {
