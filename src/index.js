@@ -24,7 +24,3 @@ const nav = (() => {
         });
     });
 })();
-
-// createHome();
-// createContact();
-// createMenu();
