@@ -3,8 +3,10 @@
 body {
     font-family: 'Chewy', cursive;
     font-size: 16px;
+    color: #fff;
+    text-shadow: 2px 3px 0px rgba(150, 150, 150, 1);
+    background-image: linear-gradient(to right top, #78dad5, #71d7ea, #7ed2f9, #9ccaff, #bdc0fb, #c8b7f6, #d4aeed, #e0a5e2, #de9ae0, #db8fde, #d984dc, #d678da);
 }
-
 #content {
     display: grid;
     justify-content: center;
@@ -42,7 +44,8 @@ body {
 
 .nav-list-link {
     text-decoration: none;
-    background-color: gray;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 /*#######################################
@@ -68,7 +71,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     align-items: center;
-    padding-top: 1rem;
+    padding: 1rem 0 1rem;
     max-width: 450px;
 }
 
@@ -78,6 +81,7 @@ body {
     left: 0;
     width: 80px;
     transform: rotate(-30deg);
+    z-index: -1;
 }
 
 .main-img-two {
@@ -86,11 +90,44 @@ body {
     right: 0;
     width: 80px;
     transform: rotate(30deg);
+    z-index: -1;
 }
 
 .main-para {
     grid-column: span 2;
     font-size: 1.2rem;
+}
+
+.main-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    width: fit-content;
+    justify-self: center;
+    padding: 0;
+    color: #fff;
+    background-color: #f397a6;
+    border: 2px solid #fff;
+    border-radius: 100vmax;
+    padding: 0.2rem 1rem;
+}
+
+.main-btn-img-one {
+    display: none;
+    position: absolute;
+    top: -2px;
+    right: -48px;
+    height: 40px;
+}
+
+.main-btn-img-two {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: -48px;
+    height: 40px;
 }
 
 /* MENU PAGE STYLES */
@@ -149,3 +186,14 @@ body {
     height: 50px;
     text-align: center;
 }
+
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* #2a6bd1
+#ffdd33
+#fea7a7
+#92cef6 */
