@@ -42,11 +42,14 @@ const createItem = (itemTitle, itemDesc, itemPrice, itemImg) => {
 }
 
 const createImg = (imgPath) => {
-    const img = document.createElement('img')
-    img.classList.add('menu-img')
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('menu-img-container');
+    const img = document.createElement('img');
+    img.classList.add('menu-img');
     img.setAttribute('src', imgPath);
     img.setAttribute('alt', '');
-    return img;
+    imgContainer.append(img);
+    return imgContainer;
 }
 
 const menuItems = [
