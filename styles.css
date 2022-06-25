@@ -7,6 +7,8 @@ body {
 
 #content {
     display: grid;
+    justify-content: center;
+    gap: 1rem;
     align-content: space-between;
     min-height: 100vh;
 }
@@ -26,14 +28,75 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 0.5em;
+}
+
+.nav-list-item {
+    display: flex;
 }
 
 .nav-list-link {
     text-decoration: none;
     background-color: gray;
-    padding: 0.5em 2em;
+}
+
+/*#######################################
+                MAIN
+#######################################*/
+
+.main {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+    max-width: 900px;
+}
+
+/* MENU PAGE STYLES */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.menu-item-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    outline: 1px solid black;
+    padding: 1rem;
+}
+
+.menu-img-container {
+    grid-row: span 3;
+    max-height: 160px;
+    max-width: 200px;
+    border: 1px solid black;
+}
+
+.menu-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* CONTACT PAGE STYLES */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+    text-transform: capitalize;
 }
 
 /*#######################################
@@ -41,5 +104,9 @@ body {
 #######################################*/
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
     text-align: center;
 }
