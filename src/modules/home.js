@@ -21,6 +21,15 @@ const createDesc = () => {
     return para;
 }
 
+const createBtn = () => {
+    const btn = document.createElement('button');
+    btn.classList.add('main-btn');
+    const imgOne = createImg('main-btn-img-one', './assets/donut-3.png');
+    const imgTwo = createImg('main-btn-img-two', './assets/donut-3.png');
+    btn.append(imgOne, 'Check out our menu!', imgTwo);
+    return btn;
+}
+
 const createHome = () => {
     const main = document.querySelector('.main');
     main.textContent = '';
@@ -30,9 +39,10 @@ const createHome = () => {
     const img = createImg('main-img-one', './assets/donut.png');
     const imgTwo = createImg('main-img-two', './assets/donut-2.png');
     const para = createDesc();
+    const btn = createBtn();
 
     mainContentContainer.append(para, img, imgTwo);
-    main.append(title, mainContentContainer);
+    main.append(title, mainContentContainer, btn);
 }
 
 export { createHome }
