@@ -1,7 +1,7 @@
 const createTitle = () => {
     const title = document.createElement('h2');
     title.classList.add('main-title');
-    title.innerText = 'Welcome to Clara\'s Donuts';
+    title.innerText = 'Welcome!';
     return title;
 }
 
@@ -13,12 +13,21 @@ const createImg = () => {
     return img;
 }
 
+const createDesc = () => {
+    const para = document.createElement('p');
+    const lineBreak = document.createElement('br');
+    para.classList.add('main-para');
+    para.append('We hand make our donuts everyday with fresh ingredients!', lineBreak, 'Check out our menu to see our standard range of donuts. Each day we also make a variety of unique specialty donuts that aren\'t shown on our menu so come visit our store to see what is available today!');
+    return para;
+}
+
 const createHome = () => {
     const main = document.querySelector('.main');
     main.textContent = '';
     const title = createTitle();
     const img = createImg();
-    main.append(title, img);
+    const para = createDesc();
+    main.append(title, img, para);
 }
 
 export { createHome }
