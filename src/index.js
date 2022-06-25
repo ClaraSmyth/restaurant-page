@@ -6,21 +6,19 @@ import { createContact } from './modules/contact.js';
 createPageLayout();
 createHome();
 
-const nav = (() => {
-    const navBtns = document.querySelectorAll('.nav-list-link');
-    navBtns.forEach((btn, index) => {
-        btn.addEventListener('click', () => {
-            switch (index) {
-                case 0:
-                    createHome();
-                    break;
-                case 1:
-                    createMenu();
-                    break;
-                case 2:
-                    createContact();
-                    break;
-            };
-        });
+const navBtns = document.querySelectorAll('.nav-list-link');
+navBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        switch (index) {
+            case 0:
+                createHome();
+                break;
+            case 1:
+                createMenu();
+                break;
+            case 2:
+                createContact();
+                break;
+        };
     });
-})();
+});
