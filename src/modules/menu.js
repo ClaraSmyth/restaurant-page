@@ -5,6 +5,12 @@ const createTitle = () => {
     return title;
 }
 
+const createMenuContainer = () => {
+    const menuContainer = document.createElement('div');
+    menuContainer.classList.add('menu-container');
+    return menuContainer;
+}
+
 const createItem = (itemTitle, itemDesc, itemPrice, itemImg) => {
     // Creates the container div
     const container = document.createElement('div');
@@ -57,13 +63,19 @@ const menuItems = [
 const createMenu = () => {
     const main = document.querySelector('.main');
     main.textContent = '';
+
     const title = createTitle();
-    main.append(title);
-    // Loops through the array and appends each item to the page
+    const menu = createMenuContainer();
+
+    // Loops through the array and appends each item to the menu
     menuItems.forEach((item) => {
         const thisItem = createItem(item[0], item[1], item[2], item[3]);
-        main.append(thisItem);
+        menu.append(thisItem);
     });
+
+    // Adds elements to the main section
+    main.append(title);
+    main.append(menu);
 };
 
 export { createMenu }
