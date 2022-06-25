@@ -9,8 +9,8 @@ const createDetails = () => {
     // Creates the contact details container
     const containerDiv = document.createElement('div');
     containerDiv.classList.add('contact-details');
-    // Creates the title h2 element
-    const title = document.createElement('h2');
+    // Creates the title h3 element
+    const title = document.createElement('h3');
     title.classList.add('contact-details-title');
     title.innerText = 'Address';
     // Creates the address p element
@@ -38,8 +38,8 @@ const createOpenHours = () => {
     // Creates the contact details container
     const containerDiv = document.createElement('div');
     containerDiv.classList.add('contact-details');
-    // Creates the title h2 element
-    const title = document.createElement('h2');
+    // Creates the title h3 element
+    const title = document.createElement('h3');
     title.classList.add('contact-details-title');
     title.innerText = 'Open Hours';
     // Creates hours p element
