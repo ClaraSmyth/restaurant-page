@@ -26,7 +26,7 @@ const createBtn = () => {
     btn.classList.add('main-btn');
     const imgOne = createImg('main-btn-img-one', './assets/donut-3.png');
     const imgTwo = createImg('main-btn-img-two', './assets/donut-3.png');
-    btn.append(imgOne, 'Check out our menu!', imgTwo);
+    btn.append(imgOne, 'Menu!', imgTwo);
     return btn;
 }
 
