@@ -11,7 +11,6 @@
     --bg-color-dark: hsla(0, 0%, 100%, 0.7);
 
     --shadow-light: hsla(0, 0%, 0%, 0.1);
-    --shadow-dark: hsla(0, 0%, 0%, 0.6);
 }
 
 
@@ -22,6 +21,7 @@ body {
     text-shadow: 2px 3px 0px var(--font-accent);
     background-image: linear-gradient(to right top, #78dad5, #71d7ea, #7ed2f9, #9ccaff, #bdc0fb, #c8b7f6, #d4aeed, #e0a5e2, #de9ae0, #db8fde, #d984dc, #d678da);
 }
+
 #content {
     display: grid;
     justify-content: center;
@@ -350,6 +350,7 @@ body {
     color: var(--font-color);
     font-size: 1.1em;
 }
+
 .footer-link:focus,
 .footer-link:hover {
     color: var(--primary-color);
