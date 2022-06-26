@@ -102,8 +102,8 @@ const createForm = () => {
 
 const createInputLabel = (name) => {
     const inputLabel = document.createElement('label');
-    inputLabel.classList.add(`${name}-label`);
-    inputLabel.setAttribute('for', `${name}-label`);
+    inputLabel.classList.add(`form-label`);
+    inputLabel.setAttribute('for', `${name}-input`);
     inputLabel.innerText = name;
     return inputLabel;
 }
@@ -111,10 +111,10 @@ const createInputLabel = (name) => {
 
 const createInput = (name, type) => {
     const input = document.createElement('input');
-    input.classList.add(`${name}-label`)
+    input.classList.add(`form-input`)
     input.setAttribute('type', type);
-    input.setAttribute('id', `${name}-label`);
-    input.setAttribute('name', `${name}-label`);
+    input.setAttribute('id', `${name}-input`);
+    input.setAttribute('name', `${name}-input`);
     input.setAttribute('required', 'true');
     return input
 }
