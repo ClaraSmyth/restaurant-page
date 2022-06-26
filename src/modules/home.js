@@ -17,7 +17,7 @@ const createDesc = () => {
 
 const createBtn = () => {
     const btn = document.createElement('button');
-    btn.classList.add('main-btn', 'nav-list-link');
+    btn.classList.add('main-btn');
     btn.append(imgOne, 'Menu!', imgTwo);
     btn.addEventListener('click', () => {
         createMenu();
@@ -31,12 +31,10 @@ const createHome = () => {
     const mainContentContainer = document.createElement('div');
     mainContentContainer.classList.add('main-content-container');
     const title = createTitle();
-    const img = createImg('main-img-one', './assets/donut.png');
-    const imgTwo = createImg('main-img-two', './assets/donut-2.png');
     const para = createDesc();
     const btn = createBtn();
 
-    mainContentContainer.append(para, img, imgTwo);
+    mainContentContainer.append(para);
     main.append(title, mainContentContainer, btn);
 }
 
