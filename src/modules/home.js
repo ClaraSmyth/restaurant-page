@@ -18,7 +18,7 @@ const createDesc = () => {
 const createBtn = () => {
     const btn = document.createElement('button');
     btn.classList.add('main-btn');
-    btn.append(imgOne, 'Menu!', imgTwo);
+    btn.append('Menu!');
     btn.addEventListener('click', () => {
         createMenu();
     });
