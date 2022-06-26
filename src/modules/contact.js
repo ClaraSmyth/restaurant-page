@@ -122,11 +122,14 @@ const createInput = (name, type) => {
 const createContact = () => {
     const main = document.querySelector('.main');
     main.textContent = '';
+    const contactContainer = document.createElement('div');
+    contactContainer.classList.add('contact-container');
     const title = createTitle();
     const details = createDetails();
     const open = createOpenHours();
     const form = createForm();
-    main.append(title, details, open, form);
+    contactContainer.append(details, open, form);
+    main.append(title, contactContainer);
 }
 
 export { createContact }
