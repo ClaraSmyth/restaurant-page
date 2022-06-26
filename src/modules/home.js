@@ -7,14 +7,6 @@ const createTitle = () => {
     return title;
 }
 
-const createImg = (className, source) => {
-    const img = document.createElement('img')
-    img.classList.add(className)
-    img.setAttribute('src', source);
-    img.setAttribute('alt', '');
-    return img;
-}
-
 const createDesc = () => {
     const para = document.createElement('p');
     const lineBreak = document.createElement('br');
@@ -26,8 +18,6 @@ const createDesc = () => {
 const createBtn = () => {
     const btn = document.createElement('button');
     btn.classList.add('main-btn', 'nav-list-link');
-    const imgOne = createImg('main-btn-img-one', './assets/donut-3.png');
-    const imgTwo = createImg('main-btn-img-two', './assets/donut-3.png');
     btn.append(imgOne, 'Menu!', imgTwo);
     btn.addEventListener('click', () => {
         createMenu();
