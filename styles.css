@@ -54,7 +54,7 @@ body {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 0.5em;
+    gap: 1.5rem;
 }
 
 .nav-list-item {
@@ -81,6 +81,7 @@ body {
     transition: width 300ms;
 }
 
+.nav-list-link:focus::after,
 .nav-list-link:hover::after  {
     width: 100%;
 }
@@ -155,6 +156,7 @@ body {
     transition: background-color 300ms;
 }
 
+.main-btn:focus,
 .main-btn:hover {
     background-color: var(--secondary-color);
 }
@@ -309,6 +311,7 @@ body {
     transition: background-color 300ms;
 }
 
+.form-btn:focus,
 .form-btn:hover {
     background-color: var(--secondary-color);
 }
@@ -347,7 +350,7 @@ body {
     color: var(--font-color);
     font-size: 1.1em;
 }
-
+.footer-link:focus,
 .footer-link:hover {
     color: var(--primary-color);
     text-shadow: 2px 3px 0px var(--font-color);
