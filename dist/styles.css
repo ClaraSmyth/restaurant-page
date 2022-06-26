@@ -2,9 +2,13 @@
 
 :root {
     --font-color: #fff;
+    --font-accent: #969696;
 
     --primary-color: #f397a6;
     --secondary-color: #78dad5;
+
+    --bg-color-light: hsla(0, 0%, 100%, 0.3);
+    --bg-color-dark: hsla(0, 0%, 100%, 0.7);
 }
 
 
@@ -32,7 +36,8 @@ body {
     align-items: center;
     text-align: center;
     width: 100vw;
-    background-color: hsla(0, 0%, 100%, 0.3);
+    min-height: 100px;
+    background-color: var(--bg-color-light);
 }
 
 .header-title {
@@ -156,15 +161,19 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    outline: 1px solid black;
     padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--bg-color-light);
 }
 
 .menu-img-container {
     grid-row: span 3;
-    max-height: 160px;
+    height: 160px;
     max-width: 200px;
-    border: 1px solid black;
+    overflow: hidden;
+    border: 2px solid var(--font-accent);
+    border-radius: 20px;
+    align-self: center;
 }
 
 .menu-img {
@@ -204,7 +213,7 @@ body {
     padding: 1.5rem 1rem 1rem;
     text-align: left;
     text-transform: capitalize;
-    background-color: hsla(0, 0%, 100%, 0.3);
+    background-color: var(--bg-color-light);
     border: none;
     border-radius: 20px;
 }
@@ -221,29 +230,30 @@ body {
 }
 
 .form-input {
-    background-color: hsla(0, 0%, 99%, 0.7);
+    background-color: var(--bg-color-dark);
     border: 2px solid var(--primary-color);
     border-radius: 100vmax;
     padding: 0.2rem 1rem;
-    color: #969696;
+    color: var(--font-accent);
     outline: none;
 }
 
-.form-input:focus {
-    border: 2px solid var(--secondary-color);
-}
-
 .form-input-ta {
-    background-color: hsla(0, 0%, 99%, 0.7);
+    background-color: var(--bg-color-dark);
     border: 2px solid var(--primary-color);
     border-radius: 20px;
     padding: 0.2rem 1rem;
-    color: #969696;
+    color: var(--font-accent);
     outline: none;
     max-width: 100%;
     min-width: 100%;
     min-height: 38px;
     resize: vertical;
+}
+
+.form-input:focus,
+.form-input-ta:focus {
+    border: 2px solid var(--secondary-color);
 }
 
 .form-btn {
@@ -278,7 +288,7 @@ body {
     height: 50px;
     text-align: center;
     width: 100vw;
-    background-color: hsla(0, 0%, 100%, 0.3);
+    background-color: var(--bg-color-light);
 }
 
 .footer-link {
