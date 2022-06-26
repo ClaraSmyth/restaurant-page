@@ -1,3 +1,5 @@
+import { createMenu } from "./menu.js";
+
 const createTitle = () => {
     const title = document.createElement('h2');
     title.classList.add('main-title');
@@ -23,10 +25,13 @@ const createDesc = () => {
 
 const createBtn = () => {
     const btn = document.createElement('button');
-    btn.classList.add('main-btn');
+    btn.classList.add('main-btn', 'nav-list-link');
     const imgOne = createImg('main-btn-img-one', './assets/donut-3.png');
     const imgTwo = createImg('main-btn-img-two', './assets/donut-3.png');
     btn.append(imgOne, 'Menu!', imgTwo);
+    btn.addEventListener('click', () => {
+        createMenu();
+    });
     return btn;
 }
 
