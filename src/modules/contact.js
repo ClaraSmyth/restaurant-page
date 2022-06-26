@@ -125,6 +125,7 @@ const createTextAreaInput = (name, type) => {
     input.setAttribute('type', type);
     input.setAttribute('id', `${name}-input`);
     input.setAttribute('name', `${name}-input`);
+    input.setAttribute('maxlength', '250');
     input.setAttribute('required', 'true');
     return input
 }
