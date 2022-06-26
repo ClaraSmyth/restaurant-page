@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
+:root {
+    --font-color: #fff;
+
+    --primary-color: #f397a6;
+    --secondary-color: #78dad5;
+}
+
+
 body {
     font-family: 'Chewy', cursive;
-    font-size: 16px;
-    color: #fff;
+    font-size: 18px;
+    color: var(--font-color);
     text-shadow: 2px 3px 0px rgba(150, 150, 150, 1);
     background-image: linear-gradient(to right top, #78dad5, #71d7ea, #7ed2f9, #9ccaff, #bdc0fb, #c8b7f6, #d4aeed, #e0a5e2, #de9ae0, #db8fde, #d984dc, #d678da);
 }
@@ -23,6 +31,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100vw;
+    background-color: hsla(0, 0%, 100%, 0.3);
 }
 
 .header-title {
@@ -45,7 +55,7 @@ body {
 .nav-list-link {
     text-decoration: none;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--font-color);
 }
 
 /*#######################################
@@ -59,10 +69,11 @@ body {
     text-align: center;
     padding: 1rem;
     max-width: 900px;
+    justify-self: center;
 }
 
 .main-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .main-content-container {
@@ -71,13 +82,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     align-items: center;
-    padding: 1rem 0 1rem;
+    padding: 0 0 1rem;
     max-width: 450px;
 }
 
 .main-img-one {
     position: absolute;
-    top: -75px;
+    top: -85px;
     left: 0;
     width: 80px;
     transform: rotate(-30deg);
@@ -86,7 +97,7 @@ body {
 
 .main-img-two {
     position: absolute;
-    top: -75px;
+    top: -85px;
     right: 0;
     width: 80px;
     transform: rotate(30deg);
@@ -106,10 +117,9 @@ body {
     font-size: 1.5rem;
     width: fit-content;
     justify-self: center;
-    padding: 0;
-    color: #fff;
-    background-color: #f397a6;
-    border: 2px solid #fff;
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--font-color);
     border-radius: 100vmax;
     padding: 0.2rem 1rem;
 }
@@ -131,6 +141,10 @@ body {
 }
 
 /* MENU PAGE STYLES */
+
+.menu-title {
+    font-size: 2.5rem;
+}
 
 .menu-container {
     display: grid;
@@ -161,6 +175,10 @@ body {
 
 /* CONTACT PAGE STYLES */
 
+.contact-title {
+    font-size: 2.5rem;
+}
+
 .contact-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -171,15 +189,49 @@ body {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .form-fieldset {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem;
     text-align: left;
     text-transform: capitalize;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border: none;
+    border-radius: 20px;
+}
+
+.form-legend {
+    position: relative;
+    top: 1.2rem;
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+}
+
+.form-label {
+    margin-left: 1rem;
+}
+
+.form-input {
+    background-color: hsla(0, 0%, 99%, 0.7);
+    border: 2px solid #f397a6;
+    border-radius: 100vmax;
+    padding: 0.2rem 1rem;
+}
+
+.form-btn {
+    font-size: 1.5rem;
+    width: fit-content;
+    align-self: center;
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    border: 2px solid --font-color;
+    border-radius: 100vmax;
+    padding: 0.2rem 1rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -202,15 +254,11 @@ body {
     align-items: center;
     height: 50px;
     text-align: center;
+    width: 100vw;
+    background-color: hsla(0, 0%, 100%, 0.3);
 }
 
 .footer-link {
     text-decoration: none;
-    color: #fff;
+    color: var(--font-color);
 }
-
-
-/* #2a6bd1
-#ffdd33
-#fea7a7
-#92cef6 */
