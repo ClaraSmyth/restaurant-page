@@ -7,6 +7,14 @@ const createTitle = () => {
     return title;
 }
 
+const createImg = (className, source) => {
+    const img = document.createElement('img')
+    img.classList.add(className)
+    img.setAttribute('src', source);
+    img.setAttribute('alt', '');
+    return img;
+}
+
 const createDesc = () => {
     const para = document.createElement('p');
     const lineBreak = document.createElement('br');
@@ -17,7 +25,7 @@ const createDesc = () => {
 
 const createBtn = () => {
     const btn = document.createElement('button');
-    btn.classList.add('main-btn');
+    btn.classList.add('main-btn', 'nav-list-link');
     btn.append('Menu!');
     btn.addEventListener('click', () => {
         createMenu();
@@ -31,10 +39,12 @@ const createHome = () => {
     const mainContentContainer = document.createElement('div');
     mainContentContainer.classList.add('main-content-container');
     const title = createTitle();
+    const img = createImg('main-img-one', './assets/donut.png');
+    const imgTwo = createImg('main-img-two', './assets/donut-2.png');
     const para = createDesc();
     const btn = createBtn();
 
-    mainContentContainer.append(para);
+    mainContentContainer.append(para, img, imgTwo);
     main.append(title, mainContentContainer, btn);
 }
 
