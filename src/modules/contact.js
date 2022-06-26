@@ -80,7 +80,7 @@ const createForm = () => {
     const emailLabel = createInputLabel('email');
     const emailInput = createInput('email', 'email');
     const messageLabel = createInputLabel('message')
-    const messageInput = createInput('message', 'textarea');
+    const messageInput = createTextAreaInput('message', 'textarea');
     // Creates the submit button
     const btn = document.createElement('button');
     btn.classList.add('form-btn');
@@ -112,6 +112,16 @@ const createInputLabel = (name) => {
 const createInput = (name, type) => {
     const input = document.createElement('input');
     input.classList.add(`form-input`)
+    input.setAttribute('type', type);
+    input.setAttribute('id', `${name}-input`);
+    input.setAttribute('name', `${name}-input`);
+    input.setAttribute('required', 'true');
+    return input
+}
+
+const createTextAreaInput = (name, type) => {
+    const input = document.createElement('textarea');
+    input.classList.add(`form-input-ta`)
     input.setAttribute('type', type);
     input.setAttribute('id', `${name}-input`);
     input.setAttribute('name', `${name}-input`);
