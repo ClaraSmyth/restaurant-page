@@ -62,9 +62,27 @@ body {
 }
 
 .nav-list-link {
+    position: relative;
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--font-color);
+}
+
+.nav-list-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--font-color);
+    border-radius: 100vmax;
+    box-shadow: 1px 1px 0px var(--font-accent);
+    transition: width 300ms;
+}
+
+.nav-list-link:hover::after  {
+    width: 100%;
 }
 
 /*#######################################
@@ -133,6 +151,16 @@ body {
     border-radius: 100vmax;
     padding: 0.2rem 1rem;
     box-shadow: 0 0 15px var(--shadow-light);
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.main-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.main-btn:active {
+    transform: scale(0.9);
 }
 
 /* MENU PAGE STYLES */
@@ -277,6 +305,16 @@ body {
     border-radius: 100vmax;
     padding: 0.2rem 1rem;
     box-shadow: 0 0 15px var(--shadow-light);
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.form-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.form-btn:active {
+    transform: scale(0.9);
 }
 
 @media screen and (max-width: 500px) {
@@ -307,4 +345,10 @@ body {
 .footer-link {
     text-decoration: none;
     color: var(--font-color);
+    font-size: 1.1em;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+    text-shadow: 2px 3px 0px var(--font-color);
 }
