@@ -6,8 +6,8 @@
 		<img src="https://img.shields.io/static/v1?label=&message=Javascript&color=F7DF1E&style=for-the-badge&logo=Javascript&logoColor=black&logoWidth=&labelColor=&link=">
 		<img src="https://img.shields.io/static/v1?label=&message=Webpack&color=8DD6F9&style=for-the-badge&logo=webpack&logoColor=black&logoWidth=&labelColor=&link=">
 		<br>
-		<font size="3"> <a href="https://clarasmyth.github.io/restaurant-page/">View Live Demo</a></font>
 	</h1>
+	<p><a href="https://clarasmyth.github.io/restaurant-page/">View Live Demo</a></p>
 </div>
 
 ![Gif of Project](./project-imgs/restaurant-page.gif)
@@ -23,6 +23,13 @@ This is a simple restaurant webpage project created as part of [TheOdinProject](
 - Vanilla JavaScript
 - Webpack
 
+## Credits
+#### Images
+- <a href="https://pixabay.com/users/popcorn_pix-7815162/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4917287">Paula Wood</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4917287">Pixabay</a>
+- <a href="https://pixabay.com/users/wikimediaimages-1185597/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2201810">WikimediaImages</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2201810">Pixabay</a>
+- <a href="https://pixabay.com/users/dohnalovajane-11160395/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5331966">dohnalovajane</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5331966">Pixabay</a>
+- <a href="https://pixabay.com/users/anya1-52016/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=179248">anya1</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=179248">Pixabay</a>
+
 ## Gallery
 #### Home page
 ![Image of Project](./project-imgs/home.png)
@@ -32,10 +39,3 @@ This is a simple restaurant webpage project created as part of [TheOdinProject](
 ![Image of Project](./project-imgs/contact.png)
 #### Mobile view
 ![Image of Project](./project-imgs/mobile.png)
-
-## Credits
-#### Images
-- <a href="https://pixabay.com/users/popcorn_pix-7815162/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4917287">Paula Wood</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4917287">Pixabay</a>
-- <a href="https://pixabay.com/users/wikimediaimages-1185597/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2201810">WikimediaImages</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2201810">Pixabay</a>
-- <a href="https://pixabay.com/users/dohnalovajane-11160395/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5331966">dohnalovajane</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5331966">Pixabay</a>
-- <a href="https://pixabay.com/users/anya1-52016/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=179248">anya1</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=179248">Pixabay</a>
