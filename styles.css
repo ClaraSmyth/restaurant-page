@@ -165,6 +165,24 @@ body {
     transform: scale(0.9);
 }
 
+@media screen and (min-width: 1200px) {
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .main-content-container {
+        max-width: 598px;
+    }
+
+    .main-para {
+        font-size: 1.6rem;
+    }
+
+    .main-btn {
+        font-size: 2rem;
+    }
+}
+
 /* MENU PAGE STYLES */
 
 .menu-title {
@@ -178,7 +196,6 @@ body {
 }
 
 .menu-item-container {
-    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -205,20 +222,25 @@ body {
     object-fit: cover;
 }
 
-.menu-item-text {
-    margin-bottom: 2rem;
-}
-
 .menu-item-price {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    justify-self: center;
     font-size: 1.4rem;
     width: 80px;
+    height: 40px;
     background-color: var(--primary-color);
     border: 2px solid var(--font-color);
     border-radius: 100vmax;
     box-shadow: 0 0 15px var(--shadow-light);
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-item-title {
+        font-size: 1.6rem;
+    }
+
+    .menu-item-text {
+        font-size: 1.2rem;
+    }
 }
 
 /* CONTACT PAGE STYLES */
@@ -271,7 +293,7 @@ body {
 
 .form-input {
     background-color: var(--bg-color-dark);
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--font-color);
     border-radius: 100vmax;
     padding: 0.2rem 1rem;
     color: var(--font-accent);
@@ -280,7 +302,7 @@ body {
 
 .form-input-ta {
     background-color: var(--bg-color-dark);
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--font-color);
     border-radius: 20px;
     padding: 0.2rem 1rem;
     color: var(--font-accent);
