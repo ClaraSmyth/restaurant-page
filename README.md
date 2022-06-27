@@ -6,7 +6,7 @@
 		<img src="https://img.shields.io/static/v1?label=&message=Javascript&color=F7DF1E&style=for-the-badge&logo=Javascript&logoColor=black&logoWidth=&labelColor=&link=">
 		<img src="https://img.shields.io/static/v1?label=&message=Webpack&color=8DD6F9&style=for-the-badge&logo=webpack&logoColor=black&logoWidth=&labelColor=&link=">
 		<br>
-		<font size="4"> <a href="https://clarasmyth.github.io/restaurant-page/">View Live Demo</a></font>
+		<font size="3"> <a href="https://clarasmyth.github.io/restaurant-page/">View Live Demo</a></font>
 	</h1>
 </div>
 
