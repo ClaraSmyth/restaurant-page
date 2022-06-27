@@ -7,7 +7,7 @@
 		<img src="https://img.shields.io/static/v1?label=&message=Webpack&color=8DD6F9&style=for-the-badge&logo=webpack&logoColor=black&logoWidth=&labelColor=&link=">
 		<br>
 	</h1>
-	<p><a href="https://clarasmyth.github.io/restaurant-page/">View Live Demo</a></p>
+	<p><b><a href="https://clarasmyth.github.io/restaurant-page/">View Live Demo</a></b></p>
 </div>
 
 ![Gif of Project](./project-imgs/restaurant-page.gif)
