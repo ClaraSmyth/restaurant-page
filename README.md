@@ -13,13 +13,13 @@
 ![Gif of Project](./project-imgs/restaurant-page.gif)
 
 ## Description
-This is a simple restaurant webpage project created as part of [TheOdinProject](https://www.theodinproject.com) curriculum to get familiar with using Webpack.
+This is a restaurant webpage created for an assignment as part of [TheOdinProject](https://www.theodinproject.com) curriculum to get familiar with using Webpack.
 
 [Click Here](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) - To see  the assignment details.
 
 ## Built Using
 - HTML5
-- Custom CSS
+- Custom CSS3
 - Vanilla JavaScript
 - Webpack
 
